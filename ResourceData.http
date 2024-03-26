@@ -1,0 +1,7 @@
+### redirect to auth server login page (users and pass are in there)
+GET http://127.0.0.1:8082
+
+### access to resource by gateway after login and get session id
+@sessionId = session that got from login
+GET http://127.0.0.1:8082/data
+Cookie: SESSION={{sessionId}}
